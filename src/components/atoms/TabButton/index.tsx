@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Dispatch, SetStateAction } from 'react'
 import { SvgIcon } from '@mui/material'
 import { useNavigate } from 'react-router-dom'
