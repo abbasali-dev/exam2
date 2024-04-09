@@ -1,72 +1,61 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const StyledSliderText = styled.div`
-  /* # of results per page */
-
-  position: absolute;
-  width: 237px;
-  height: 36px;
-  left: 210px;
-  top: 230px;
-
-  /* Headline 5/Regular */
+  align-items: center;
+  color: #FFFFFF;
+  display: flex;
   font-family: 'Ubuntu';
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  height: 36px;
+  left: 210px;
   line-height: 150%;
-  /* identical to box height, or 36px */
-  display: flex;
-  align-items: center;
+  position: absolute;
   text-transform: capitalize;
-
-  /* Greyscale/white */
-  color: #FFFFFF;
+  top: 230px;
+  width: 237px;
   
   @media (max-width: 440px) {
     top: 210px;
     left: 20px;
   }
 `
-export const StyledResultText = styled.div`
-  position: absolute;
-  width: 55px;
-  height: 50px;
-  left: 210px;
-  top: 286px;
 
-  /* Headline 3 / Bold */
+export const StyledResultText = styled.div`
+  align-items: center;
+  color: #FFFFFF;
+  display: flex;
   font-family: 'Ubuntu';
+  font-size: 48px;
   font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  height: 50px;
+  left: 210px;
   line-height: 150%;
-  /* or 72px */
-  display: flex;
-  align-items: center;
-
-  /* Greyscale/white */
-  color: #FFFFFF;
+  position: absolute;
+  top: 286px;
+  width: 55px;
 
   @media (max-width: 440px) {
     left: 20px;
     top: 262px;
   }
 `
-export const StyledResultTextHelper = styled.div`
-  position: absolute;
-  width: 51px;
-  height: 24px;
-  top: 308px;
-  left: 275px;
 
+export const StyledResultTextHelper = styled.div`
+  color: #FFFFFF;
   font-family: 'Ubuntu';
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
+  height: 24px;
+  left: 275px;
   letter-spacing: 0.15px;
-  color: #FFFFFF;
+  line-height: 150%;
+  position: absolute;
+  top: 308px;
+  width: 51px;
 
   @media (max-width: 440px) {
     left: 85px;

@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components'
 
 export const StyledResultItem = styled.div`
   width: 219px;
@@ -12,7 +12,8 @@ export const StyledResultItem = styled.div`
     height: 273px;
   }
 `
-export const StyledResultImage = styled.img<{ backgroundUrl: string}>`
+
+export const StyledResultImage = styled.img<{ backgroundUrl: string }>`
   position: relative;
   width: 219px;
   height: 146px;
@@ -24,6 +25,7 @@ export const StyledResultImage = styled.img<{ backgroundUrl: string}>`
     height: 220px;
   }
 `
+
 export const StyledCategoryResultText = styled.div`
   position: relative;
   left: 0%;
@@ -39,6 +41,7 @@ export const StyledCategoryResultText = styled.div`
   letter-spacing: 0.139688px;
   color: #FFFFFF;
 `
+
 export const StyledCategoryResultUserName = styled.div`
   position: relative;
   left: 0%;

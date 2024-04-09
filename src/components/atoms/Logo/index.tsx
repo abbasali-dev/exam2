@@ -1,11 +1,5 @@
-import { LogoBox, LogoText } from "./Logo.styles"
+import { LogoBox, LogoText } from './Logo.styles'
 
-const Logo = () => {
-  return (
-    <LogoBox>
-      <LogoText>LOGO</LogoText>
-    </LogoBox>
-  )
-}
+const Logo = () => <LogoBox><LogoText>LOGO</LogoText></LogoBox>
 
 export default Logo

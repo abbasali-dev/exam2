@@ -1,6 +1,6 @@
-import { Drawer } from "@mui/material";
-import styled from "styled-components";
-import { BACKGROUND_COLOR_APP } from "utils/appCostants";
+import { Drawer } from '@mui/material'
+import styled from 'styled-components'
+import { BACKGROUND_COLOR_APP } from 'utils/appCostants'
 
 export const StyledRightDrawer = styled(Drawer)`
   flex-direction: column;

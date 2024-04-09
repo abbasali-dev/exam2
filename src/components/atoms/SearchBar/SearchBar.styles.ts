@@ -1,20 +1,21 @@
-import { InputBase } from "@mui/material";
-import styled from "styled-components";
-import { BACKGROUND_COLOR_APP } from "utils/appCostants";
+import { InputBase } from '@mui/material'
+import styled from 'styled-components'
 
-export const StyledSearchBar = styled(InputBase)<{ focused: boolean }>`
-  position: absolute;
-  width: 725px;
-  height: 60px;
-  top: 110px;
-  left: 210px;
-  gap: 0px;
-  border-radius: 6px;
-  opacity: 0px;
+import { BACKGROUND_COLOR_APP } from 'utils/appCostants'
+
+export const StyledSearchBar = styled(InputBase) <{ focused: boolean }>`
   background-color: ${BACKGROUND_COLOR_APP};
-  border: 3px solid ${({ focused }) => focused ? '#FF9B33' : '#FFFFFF80' };
-  padding-left: 18px;
+  border-radius: 6px;
+  border: 3px solid ${({ focused }) => focused ? '#FF9B33' : '#FFFFFF80'};
   color: #FFFFFF !important;
+  gap: 0px;
+  height: 60px;
+  left: 210px;
+  opacity: 0px;
+  padding-left: 18px;
+  position: absolute;
+  top: 110px;
+  width: 725px;
 
   @media (max-width: 440px) {
     left: 20px;
@@ -22,34 +23,29 @@ export const StyledSearchBar = styled(InputBase)<{ focused: boolean }>`
     width: 335px;
   }
 `
+
 export const StyledSearchBarText = styled.div`
-    /* Search */
-
-  position: absolute;
-  width: 73px;
-  height: 36px;
-  left: 210px;
-  top: 54px;
-
-  /* Headline 5/Regular */
+  align-items: center;
+  color: #FFFFFF;
+  display: flex;
   font-family: 'Ubuntu';
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  height: 36px;
+  left: 210px;
   line-height: 150%;
-  /* identical to box height, or 36px */
-  display: flex;
-  align-items: center;
+  position: absolute;
   text-transform: capitalize;
-
-  /* Greyscale/white */
-  color: #FFFFFF;
+  top: 54px;
+  width: 73px;
 
   @media (max-width: 440px) {
     left: 20px;
     top: 70px;
   }
 `
+
 export const StyledSearchBarLine = styled.hr`
   position: absolute;
   width: 725px;
@@ -64,11 +60,13 @@ export const StyledSearchBarLine = styled.hr`
     display: none;
   }
 `
+
 export const LogoHidden = styled.div`
   @media (min-width: 440px) {
     display: none;
   }
 `
+
 export const LogoHiddenUp = styled.div`
   @media (max-width: 440px) {
     display: none;

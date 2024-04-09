@@ -1,11 +1,13 @@
-import SidebarItemList from 'components/molecules/SidebarItemList'
-import { StyledDrawer } from './Sidebar.styles'
 import { useEffect, useState } from 'react'
 import { Outlet, useLocation } from 'react-router-dom'
 
+import SidebarItemList from 'components/molecules/SidebarItemList'
+
+import { StyledDrawer } from './Sidebar.styles'
+
 const Sidebar = () => {
 	const location = useLocation()
-  const currentUrl = location.pathname
+	const currentUrl = location.pathname
 	const [selectedTab, setSelectedTab] = useState<number>(currentUrl === '/home' ? 0 : 1)
 	const [width, setWidth] = useState(window.innerWidth)
 

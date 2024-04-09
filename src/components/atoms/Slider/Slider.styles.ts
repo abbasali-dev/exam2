@@ -1,12 +1,12 @@
-import { Slider } from "@mui/material"
-import styled from "styled-components"
+import { Slider } from '@mui/material'
+import styled from 'styled-components'
 
 export const StyledSlider = styled(Slider)`
-  position: absolute !important;;
-  width: 725px !important;
   height: 6px !important;
-  top: 356px !important;
   left: 210px !important;
+  position: absolute !important;;
+  top: 356px !important;
+  width: 725px !important;
 
   .MuiSlider-track {
     background-image: linear-gradient(270deg, #FFD25F 0.13%, #FF5C01 100%) !important;

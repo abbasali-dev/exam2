@@ -1,12 +1,13 @@
 import axios from 'axios'
-import SearchButton from 'components/atoms/Button'
+import { useState } from 'react'
+
+import { getSliderActualVal } from 'utils/helperFunctions'
+import { ProfileInterface, SEARCH_API, ServerPageInfo } from 'utils/appCostants'
+import ResultSection from 'components/organisms/ResultSection'
 import SearchBar from 'components/atoms/SearchBar'
+import SearchButton from 'components/atoms/Button'
 import Slider from 'components/atoms/Slider'
 import SliderText from 'components/atoms/SliderText'
-import ResultSection from 'components/organisms/ResultSection'
-import { useState } from 'react'
-import { ProfileInterface, SEARCH_API, ServerPageInfo } from 'utils/appCostants'
-import { getSliderActualVal } from 'utils/helperFunctions'
 
 const HomeMainPage = () => {
   const [searchValue, setSearchValue] = useState<string>('')
@@ -49,18 +50,21 @@ const HomeMainPage = () => {
 
   return (
     <>
-      {searchLoading === -1 && (<>
-        <SearchBar setSearchValue={setSearchValue} />
-        <SliderText resultPerPage={resultPerPage} />
-        <Slider setResultPerPage={setResultPerPage} />
-        <SearchButton onClickHandler={onClickSearchHandler} name={'SEARCH'} />
-      </>)}
+      {searchLoading === -1 && (
+        <>
+          <SearchBar setSearchValue={setSearchValue} />
+          <SliderText resultPerPage={resultPerPage} />
+          <Slider setResultPerPage={setResultPerPage} />
+          <SearchButton onClickHandler={onClickSearchHandler} name={'SEARCH'} />
+        </>
+      )}
       <ResultSection
         resultList={profileResults}
         resetResult={resetResult}
         onMoreClick={moreClickHandler}
         serverPageInfo={serverPageInfo}
-        loadingSearch={searchLoading} />
+        loadingSearch={searchLoading}
+      />
     </>
   )
 }

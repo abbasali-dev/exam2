@@ -1,5 +1,12 @@
 import { TagInterface } from 'utils/appCostants'
-import { StyledTagCategory, StyledTagCategoryResult, StyledTagCategoryResultText, StyledTagCategoryText, StyledTagCategoryTextBox, StyledTagItem } from './TagItem.styles'
+import {
+  StyledTagCategory,
+  StyledTagCategoryResult,
+  StyledTagCategoryResultText,
+  StyledTagCategoryText,
+  StyledTagCategoryTextBox,
+  StyledTagItem
+} from './TagItem.styles'
 
 type TagItemProps = {
   tagItem: TagInterface
@@ -12,7 +19,7 @@ const TagItem = ({ tagItem }: TagItemProps) => {
     }
     return str
   }
-  
+
   return (
     <StyledTagItem>
       <StyledTagCategory>

@@ -1,25 +1,20 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const StyledResultText = styled.div`
-  position: absolute;
-  width: 102px;
-  height: 45px;
-  left: 217px;
-  top: 92px;
-
-  /* Headline 4/Regular */
+  align-items: center;
+  color: #FFFFFF;
+  display: flex;
   font-family: 'Ubuntu';
+  font-size: 30px;
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
-  line-height: 150%;
-  /* identical to box height, or 45px */
-  display: flex;
-  align-items: center;
+  height: 45px;
+  left: 217px;
   letter-spacing: 0.25px;
-
-  /* Greyscale/white */
-  color: #FFFFFF;
+  line-height: 150%;
+  position: absolute;
+  top: 92px;
+  width: 102px;
 
   @media (max-width: 440px) {
     font-size: 24px;
@@ -29,13 +24,12 @@ export const StyledResultText = styled.div`
   }
 `
 export const ResultAction = styled.div`
-  /* Action */
-  position: absolute;
-  width: 36px;
+  cursor: pointer;
   height: 36px;
   left: 160px;
+  position: absolute;
   top: 97px;
-  cursor: pointer;
+  width: 36px;
 
   @media (max-width: 440px) {
     width: 26px;
@@ -45,23 +39,18 @@ export const ResultAction = styled.div`
   }
 `
 export const StyledResultTextDown = styled.div`
-  position: absolute;
-  top: 90px;
-  left: 20px;
-  width: 80px;
-  height: 36px;
-
-  /* Headline 5/Regular */
+  align-items: center;
+  color: #FFFFFF;
+  display: flex;
   font-family: 'Ubuntu';
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  height: 36px;
+  left: 20px;
   line-height: 150%;
-  /* identical to box height, or 36px */
-  display: flex;
-  align-items: center;
+  position: absolute;
   text-transform: capitalize;
-
-  /* Greyscale/white */
-  color: #FFFFFF;
+  top: 90px;
+  width: 80px;
 `

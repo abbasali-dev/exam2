@@ -1,6 +1,7 @@
-import { Drawer } from "@mui/material"
-import styled from "styled-components"
-import { BACKGROUND_COLOR_SIDEBAR, DRAWER_WIDTH } from "utils/appCostants"
+import { Drawer } from '@mui/material'
+import styled from 'styled-components'
+
+import { BACKGROUND_COLOR_SIDEBAR, DRAWER_WIDTH } from 'utils/appCostants'
 
 export const StyledDrawer = styled(Drawer)`
   flex-direction: column;

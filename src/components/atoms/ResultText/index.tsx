@@ -1,5 +1,6 @@
-import { ResultAction, StyledResultText } from './ResultText.styles'
 import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft'
+
+import { ResultAction, StyledResultText } from './ResultText.styles'
 
 type ResultTextType = {
   name: string
